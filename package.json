@@ -1,0 +1,15 @@
+{
+    "name": "type-dojo",
+    "private": true,
+    "version": "1.0.0",
+    "scripts": {
+        "check": "tsc --noEmit",
+        "watch": "tsc --noEmit --watch",
+        "fetch": "./fetch-challenge.sh",
+        "progress": "./progress.sh"
+    },
+    "devDependencies": {
+        "@type-challenges/utils": "^0.1.1",
+        "typescript": "^5.5.0"
+    }
+}
