@@ -1,5 +1,3 @@
-// 00004-easy-pick
-//
 //
 // Implement the built-in `Pick<T, K>` generic without using it.
 //
@@ -25,7 +23,7 @@
 
 // ============= Code =============
 
-type MyPick<T, K> = any;
+type MyPick<T, K extends keyof T> = { [P in K]: T[P] };
 
 // ============= Tests =============
 

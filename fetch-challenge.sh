@@ -26,10 +26,8 @@ README=$(fetch README.md)
 TEMPLATE=$(fetch template.ts)
 TESTS=$(fetch test-cases.ts)
 
+# Comment README and drop HTML badges
 {
-    echo "// $SLUG"
-    echo "//"
-    # Comment README and drop HTML badges
     printf '%s\n' "$README" | sed -e '/<!--info-/d' -e 's|^|// |'
     echo
     echo "// ============= Code ============="
