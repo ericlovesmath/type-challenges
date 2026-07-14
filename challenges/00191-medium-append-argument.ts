@@ -16,7 +16,12 @@
 
 // ============= Code =============
 
-type AppendArgument<Fn, A> = any;
+// Avoiding Parameters<Fn>
+type AppendArgument<Fn extends Function, A> = Fn extends (
+  ..._: infer L
+) => infer R
+  ? (..._: [...L, A]) => R
+  : never;
 
 // ============= Tests =============
 
