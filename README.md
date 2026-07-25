@@ -5,7 +5,7 @@ Solving [TypeScript Type Challenges](https://github.com/type-challenges/type-cha
 ```
            solved  next up
   easy     13/13   done!
-  medium   26/104  01097-medium-isunion
+  medium   30/104  02070-medium-drop-char
   hard     0/55    00006-hard-simple-vue
   extreme  0/17    00005-extreme-readonly-keys
 
